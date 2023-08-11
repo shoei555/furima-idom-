@@ -70,6 +70,15 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
+# デバイス機能
 gem 'devise'
+# アクティブハッシュ
+gem 'active_hash'
+
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
+gem 'activestorage-validator'
+# 検証ツール
+gem 'pry-rails'
+
 
