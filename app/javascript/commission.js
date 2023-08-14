@@ -4,8 +4,10 @@ function commission () {
   const price = document.getElementById('item-price');
   const tax_price = document.getElementById('add-tax-price');
   const profit = document.getElementById('profit');
+
+  if (!price || !tax_price || !profit) return;
   
-  price.addEventListener('change', function() {
+  price.addEventListener('input', function() {
 // letは、後で書き換えることができる変数を定義する書き方です。
     let taxValue = Math.floor(price.value*0.1);//手数料
     let profitValue = price.value - taxValue//利益計算

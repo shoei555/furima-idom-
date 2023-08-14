@@ -80,5 +80,12 @@ gem 'image_processing', '~> 1.2'
 gem 'activestorage-validator'
 # 検証ツール
 gem 'pry-rails'
+#決済ツール
+gem 'payjp'
+gem 'gon'
+
+group :production do
+  gem 'pg'
+end
 
 
