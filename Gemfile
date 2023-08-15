@@ -83,9 +83,11 @@ gem 'pry-rails'
 #決済ツール
 gem 'payjp'
 gem 'gon'
+#AWS_S3ツール
+gem "aws-sdk-s3", require: false
 
 group :production do
-  gem 'pg'
+  gem 'unicorn', '6.1.0'
 end
 
 
